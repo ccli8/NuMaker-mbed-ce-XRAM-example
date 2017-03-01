@@ -1,0 +1,8 @@
+{
+    "target_overrides": {
+        "NUMAKER_PFM_NUC472": {
+            "target.extra_labels_remove": ["NU_XRAM_SUPPORTED"],
+            "target.extra_labels_add": ["NU_XRAM_UNSUPPORTED"]
+        }
+    }
+}
