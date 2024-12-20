@@ -1,0 +1,21 @@
+{
+    "target_overrides": {
+        "*": {
+            "platform.stdio-convert-newlines": true,
+            "platform.stdio-baud-rate": 115200
+        },
+        "NUMAKER_PFM_NUC472": {
+            // Enable EBI RAM or not
+            "target.ebi-enable": false
+        },
+        "NUMAKER_IOT_M467": {
+            // This board has no HyperRAM
+            /*
+            "target.hbi-enable": true,
+            "target.hbi-mfp-reg-list": "0x40000534, 0x4000057C, 0x40000590, 0x40000594",
+            "target.hbi-mfp-reg-msk-list": "0xFFFFFF00, 0xFFFFFFFF, 0xFFFF0000, 0xFFFFFFFF",
+            "target.hbi-mfp-reg-val-list": "0x10101000, 0x10101010, 0x10100000, 0x10101010"
+            */
+        }
+    }
+}
